@@ -1,5 +1,5 @@
 Login;Name;Email
 ivanov;Ivan Ivanov;ivanov@mail.ru
-петров;Петр Петров;petrov@google.com
+РїРµС‚СЂРѕРІ;РџРµС‚СЂ РџРµС‚СЂРѕРІ;petrov@google.com
 obama;Barack Obama;obama@google.com
-bush;Джордж Буш;bush@mail.ru
+bush;Р”Р¶РѕСЂРґР¶ Р‘СѓС€;bush@mail.ru
