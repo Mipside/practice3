@@ -9,11 +9,11 @@ jtr-practice3
 
 Input data (part1.txt)
 
-Login;Name;Email
-ivanov;Ivan Ivanov;ivanov@mail.ru
-петров;Петр Петров;petrov@google.com
-obama;Barack Obama;obama@google.com
-bush;Джордж Буш;bush@mail.ru
+	Login;Name;Email
+	ivanov;Ivan Ivanov;ivanov@mail.ru
+	петров;Петр Петров;petrov@google.com
+	obama;Barack Obama;obama@google.com
+	bush;Джордж Буш;bush@mail.ru
 
 
 1.1. Метод convert1
@@ -22,10 +22,10 @@ bush;Джордж Буш;bush@mail.ru
 
 Output of convert1
 
-ivanov ==> ivanov@mail.ru
-петров ==> petrov@google.com
-obama ==> obama@google.com
-bush ==> bush@mail.ru
+	ivanov ==> ivanov@mail.ru
+	петров ==> petrov@google.com
+	obama ==> obama@google.com
+	bush ==> bush@mail.ru
 
 1.2. Метод convert2
 ------
@@ -33,10 +33,10 @@ bush ==> bush@mail.ru
 
 Output of convert2
 
-Ivanov Ivan (email: ivanov@mail.ru)
-Петров Петр (email: petrov@google.com)
-Obama Barack (email: obama@google.com)
-Буш Джордж (email: bush@mail.ru)
+	Ivanov Ivan (email: ivanov@mail.ru)
+	Петров Петр (email: petrov@google.com)
+	Obama Barack (email: obama@google.com)
+	Буш Джордж (email: bush@mail.ru)
 
 
 1.3. Метод convert3
@@ -46,8 +46,8 @@ Obama Barack (email: obama@google.com)
 
 Output of convert3
 
-mail.ru ==> ivanov, bush
-google.com ==> петров, obama
+	mail.ru ==> ivanov, bush
+	google.com ==> петров, obama
 
 
 1.4. Метод convert4
@@ -57,11 +57,11 @@ google.com ==> петров, obama
 
 Output of convert4
 
-Login;Name;Email;Password
-ivanov;Ivan Ivanov;ivanov@mail.ru;1707
-петров;Петр Петров;petrov@google.com;9321
-obama;Barack Obama;obama@google.com;4623
-bush;Джордж Буш;bush@mail.ru;7514
+	Login;Name;Email;Password
+	ivanov;Ivan Ivanov;ivanov@mail.ru;1707
+	петров;Петр Петров;petrov@google.com;9321
+	obama;Barack Obama;obama@google.com;4623
+	bush;Джордж Буш;bush@mail.ru;7514
 
 
 _______________________
@@ -80,18 +80,17 @@ _______________________
 
 Пример Input data (part2.txt)
 
-When I was younger, so much younger than today
-I never needed anybody's help in any way
-But now these days are gone, I'm not so self-assured
-Now I find I've changed my mind
-I've opened up the doors
+	When I was younger, so much younger than today
+	I never needed anybody's help in any way
+	But now these days are gone, I'm not so self-assured
+	Now I find I've changed my mind
+	I've opened up the doors
 
 
 Пример Output
 
-Min: I, s, m
-Max: younger, anybody, assured, changed
-
+	Min: I, s, m
+	Max: younger, anybody, assured, changed
 
 _______________________
 
@@ -106,14 +105,14 @@ _______________________
 
 Пример Input data
 
-When I was younger
-I never needed
+	When I was younger
+	I never needed
 
 
 Пример Output
 
-When I Was Younger
-I Never Needed
+	When I Was Younger
+	I Never Needed
 
 _______________________
 
@@ -139,8 +138,8 @@ _______________________
 =========================================
 Создать класс с двумя статическими методами перевода из десятичной системы счисления в римскую и обратно.
 
-public static String decimal2Roman(int x) { ... }
-public static int roman2Decimal(String s) { ... }
+	public static String decimal2Roman(int x) { ... }
+	public static int roman2Decimal(String s) { ... }
 
 Рабочий диапазон методов - от 1 до 100 включительно.
 
@@ -148,19 +147,19 @@ public static int roman2Decimal(String s) { ... }
 
 DECIMAL ==decimal2Roman==> ROMAN ==roman2Decimal==> DECIMAL
 
-1 ====> I ====> 1
-2 ====> II ====> 2
-3 ====> III ====> 3
-4 ====> IV ====> 4
-5 ====> V ====> 5
-...
-94 ====> XCIV ====> 94
-95 ====> XCV ====> 95
-96 ====> XCVI ====> 96
-97 ====> XCVII ====> 97
-98 ====> XCVIII ====> 98
-99 ====> XCIX ====> 99
-100 ====> C ====> 100
+	1 ====> I ====> 1
+	2 ====> II ====> 2
+	3 ====> III ====> 3
+	4 ====> IV ====> 4
+	5 ====> V ====> 5
+	...
+	94 ====> XCIV ====> 94
+	95 ====> XCV ====> 95
+	96 ====> XCVI ====> 96
+	97 ====> XCVII ====> 97
+	98 ====> XCVIII ====> 98
+	99 ====> XCIX ====> 99
+	100 ====> C ====> 100
 
 	
 Брут-форс (полный перебор) не допускается! 
@@ -168,5 +167,5 @@ DECIMAL ==decimal2Roman==> ROMAN ==roman2Decimal==> DECIMAL
 Решение которое использует массив из ста элементов исключить из рассмотрения:
 
 
-String[] numbers = {"I", "II", "III", "IV", "V", ..., "XCV", "XCVI", "XCVII", ..., "C"}
+	String[] numbers = {"I", "II", "III", "IV", "V", ..., "XCV", "XCVI", "XCVII", ..., "C"}
 
